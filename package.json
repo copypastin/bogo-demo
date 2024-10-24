@@ -1,0 +1,14 @@
+{
+  "name": "bogo-demo",
+  "version": "1.0.0",
+  "description": "Interactive demo for Compsci Club",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "copypastin",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^33.0.2"
+  }
+}
