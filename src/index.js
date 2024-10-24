@@ -10,6 +10,7 @@ app.whenReady().then(() => {
             nodeIntegration: false,
         },
     })
+    win.fullScreen = true;
     win.removeMenu();
     win.loadFile('src/main.html');
 })

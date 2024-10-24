@@ -63,14 +63,14 @@
                             rectangle.style.transition = 'background-color 0.1s ease-in-out';
                             rectangle.style.backgroundColor = 'rgb(50, 50, 105)';
             });
-            
+
             function sort() {
                 tries++;
                 setTimeout(() => {
                     arr = shuffle(arr);
                     console.log(arr);
                     for (var i = 0; i < rectangles.length; i++) {
-                        rectangles[i].style.height = arr[i] * 20 + 'px'; // Adjust height based on value
+                        rectangles[i].style.height = arr[i] * 60 + 'px'; // Adjust height based on value
                         rectangles[i].innerText = arr[i]; // Display the value inside the rectangle
                     }
                     document.querySelector('.info').innerText = `Record: ${bestScore} | Current Attemps: ${tries} `;
@@ -86,10 +86,13 @@
                             rectangle.style.backgroundColor = "green"
                         });
                     }
-                }, 1); // adjust the delay as needed
+                }, 35); // adjust the delay as needed
             }
             sort(arr)
         }
     </script>
+
+<img src="./assets/qr.png" alt="QR Code" class="qr"> 
+<div class="qrtext">Source code here!</div>
 </body>
 </html>
